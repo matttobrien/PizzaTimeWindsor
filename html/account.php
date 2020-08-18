@@ -141,6 +141,18 @@
                 <div class="col">
                   <div class="card w-250 shadow-sm">
                     <div class="card-body">
+                        <?php include 'chart.php';  ?>
+                    </div>
+                  </div>
+                </div>
+            <?php } ?>
+            </div>
+        <br> 
+        <div class="row justify-content-md-center">
+            <?php if ($_SESSION['admin'] == 1) { ?>
+                <div class="col">
+                  <div class="card w-250 shadow-sm">
+                    <div class="card-body">
                         <h5 class="card-title text-center">Manage Users</h5>
                         <table class="table">
                           <thead>
@@ -176,6 +188,8 @@
                 </div>
             <?php } ?>
             </div>
+          </div>
+        </div>
           </div>
         </div>
       </div>
